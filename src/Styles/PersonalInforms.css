@@ -1,0 +1,46 @@
+.personal_informs_section {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #eeeff1;
+  border-radius: 8px;
+  padding: 24px;
+}
+.content_title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #212121;
+}
+.content_line {
+  width: 100%;
+  border: 0.5px solid #dfdfdf;
+  margin: 24px 0;
+}
+.contect_half_width {
+  width: calc(50% - 12px);
+}
+.contect_full {
+  width: 100%;
+}
+.content_form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content_img_section {
+  display: flex;
+}
+.content_img_form {
+  width: calc(100% - 160px);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 24px;
+}
+.content_img_right {
+  display: flex;
+  gap: 4px;
+}
+.personal_gender img {
+  margin: 0 11px 0 5px;
+}

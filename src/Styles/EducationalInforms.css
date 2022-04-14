@@ -1,0 +1,133 @@
+.educational_header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  padding: 24px;
+  border: 1px solid #eeeff1;
+  box-shadow: 4px 4px 8px rgba(225, 226, 231, 0.7);
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.education_add_button {
+  width: 169px;
+  height: 48px;
+  background: #2bb76b;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.education_steps_header {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #212121;
+}
+.education_card_content {
+  display: flex;
+}
+.education_card_steps {
+  display: flex;
+  align-items: center;
+  width: 57px;
+}
+.education_card_years {
+  height: 69px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  column-gap: 30px;
+  margin-top: 12px;
+}
+.education_card_years span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #76767a;
+  margin-left: 4px;
+}
+.education_card_years span:first-child {
+  margin-bottom: 17px;
+}
+.education_card_right {
+  margin-left: 46px;
+}
+.education_card_right text {
+  display: block;
+}
+.education_card_right text:first-child {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #212121;
+}
+.education_card_right text:nth-child(2) {
+  margin-bottom: 17px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: #76767a;
+}
+.education_card_right span:first-child {
+  font-size: 14px;
+  line-height: 20px;
+  color: #212121;
+}
+.education_card_right span:nth-child(2) {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.44px;
+  color: #212121;
+  margin-left: 4px;
+}
+.education_form_checkbox {
+  margin-top: -25px !important;
+  margin-bottom: -10px !important;
+}
+.education_upload {
+  width: 392px;
+  height: 48px;
+  background-color: #fafbfc;
+  border: 1px solid #dfe2ea;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+}
+.education_upload span {
+  color: #004fff;
+  margin-left: auto;
+}
+.education_modal_footer {
+  display: flex;
+}
+.eduaction_cancel_button {
+  margin-left: 10px;
+  font-weight: 500 !important;
+  color: #2bb76b !important;
+}
+.eduaction_delete_button {
+  margin-left: auto;
+  color: #ff162e !important;
+  display: flex !important;
+  gap: 5px;
+  align-items: center;
+}
+.education_edit_upload_delete {
+  float: right;
+  line-height: 20px;
+  color: #eb5757;
+  margin-bottom: 5px;
+  cursor: pointer;
+}

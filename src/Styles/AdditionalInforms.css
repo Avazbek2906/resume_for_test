@@ -1,0 +1,35 @@
+.form_special_label {
+  width: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #212121;
+  margin: 32px 0 24px;
+}
+.form_spacial_right {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 110px);
+}
+.form_special_label span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #76767a;
+}
+.form_special_line {
+  border-top: 2px solid #76767a;
+  width: calc(100% - 5px);
+}
+.additional_language_button {
+  background-color: #ffffff;
+  border: 1px solid #00aaff;
+  box-shadow: 4px 4px 8px rgba(225, 226, 231, 0.7);
+  border-radius: 3px;
+  color: #00aaff;
+  padding: 7px 15px;
+  cursor: pointer;
+}
