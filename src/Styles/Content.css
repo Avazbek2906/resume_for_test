@@ -25,16 +25,37 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  border: 1px solid #d2d6dc;
-  background-color: white;
-  padding: 12px;
+  padding: 10px 12px 10px 25px;
+
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 20px;
+  z-index: 2;
+  position: relative;
+  flex-grow: 1;
+  justify-content: center;
+}
+.content_menu:not(:first-child) {
+  margin-left: -20px;
+}
+.content_menu:nth-child(4) {
+  padding-left: 38px;
+}
+.content_menu_title {
+  z-index: 2;
+  width: 140px;
+}
+.content_menu_bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
 }
 .content_menu_number {
   width: 32px;
   height: 32px;
+  z-index: 2;
   border: 1px solid #c1c9d2;
   border-radius: 50%;
   display: flex;
@@ -44,9 +65,23 @@
   font-size: 24px;
   line-height: 32px;
   color: #212121;
+  margin-right: 10px;
+}
+.content_menu_number_current {
+  border: 1px solid #00aaff;
+  color: #00aaff;
+}
+.content_menu_badge {
+  width: 28px;
+  height: 28px;
+  z-index: 2;
   margin-right: 12px;
 }
-.content_section input {
+.content_menu_badge svg {
+  width: 100%;
+  height: 100%;
+}
+.ant-form input {
   background-color: #fafbfc !important;
   border: 1px solid #dfe2ea !important;
   border-radius: 4px !important;
@@ -55,6 +90,25 @@
   background-color: #fafbfc !important;
   border: 1px solid #dfe2ea !important;
   border-radius: 4px !important;
+}
+.ant-select-selector {
+  background-color: #fafbfc !important;
+  border: 1px solid #dfe2ea !important;
+  border-radius: 4px !important;
+}
+.content_saved_modal {
+  padding-top: 50px;
+  text-align: center;
+}
+.content_saved_modal text {
+  width: 80%;
+  margin: 48px auto;
+  display: block;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #212121;
 }
 /* .ant-form-item-control-input {
   background-color: #fafbfc !important;
@@ -71,9 +125,16 @@
   box-shadow: 4px 4px 8px rgba(225, 226, 231, 0.7);
   border-radius: 8px;
 }
+.ant-modal-content {
+  border-radius: 8px !important;
+}
 .ant-modal-title {
   font-weight: 500;
   font-size: 24px !important;
   line-height: 32px;
   color: #212121;
+}
+.ant-modal-header {
+  padding: 24px !important;
+  border-radius: 8px 8px 0 0 !important;
 }

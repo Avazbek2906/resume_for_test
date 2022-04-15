@@ -21,6 +21,10 @@
   color: #ffffff;
   border: none;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 .education_steps_header {
   font-weight: 400;

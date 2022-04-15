@@ -4,6 +4,7 @@ import stepDotSvg from "../Assets/Svg/stepDot.svg";
 import editSvg from "../Assets/Svg/edit.svg";
 import { Modal } from "antd";
 import EducationModal from "./EducationModal";
+import { ReactComponent as PlusIcon } from "../Assets/Svg/plus.svg";
 
 function EducationInforms() {
   const [visible, setVisible] = useState(false);
@@ -20,6 +21,7 @@ function EducationInforms() {
           size="large"
           className="education_add_button"
         >
+          <PlusIcon />
           Qo‘shish
         </button>
       </div>

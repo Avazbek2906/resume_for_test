@@ -25,9 +25,10 @@ function Navbar() {
               <Option value="ru">Русский</Option>
               <Option value="eng">English</Option>
             </Select>
-            <Button ghost style={{ marginLeft: 30 }}>
+            <button className="navbar_button_enter">OneID bilan kirish</button>
+            {/* <Button ghost style={{ marginLeft: 30 }}>
               OneID bilan kirish
-            </Button>
+            </Button> */}
           </div>
         </div>
         {/* Navbar search section */}

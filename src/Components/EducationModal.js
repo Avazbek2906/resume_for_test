@@ -112,28 +112,31 @@ function EducationModal(props) {
           <Input size="large" />
         </Form.Item>
 
-        <div className="contect_half_width content_img_right">
-          <Form.Item label="Tug’ilgan yili*">
-            <Select size="large" defaultValue="3">
-              <Select.Option value="1">1</Select.Option>
-              <Select.Option value="2">2</Select.Option>
-              <Select.Option value="3">3</Select.Option>
-            </Select>
-          </Form.Item>
-          <Form.Item label=".">
-            <Select style={{ width: 212 }} size="large" defaultValue="Dekabr">
-              <Select.Option value="Dekabr">Dekabr</Select.Option>
-              <Select.Option value="Yanvar">Yanvar</Select.Option>
-              <Select.Option value="Fevral">Fevral</Select.Option>
-            </Select>
-          </Form.Item>
-          <Form.Item label=".">
-            <Select style={{ width: 88 }} size="large" defaultValue="2021">
-              <Select.Option value="2020">2020</Select.Option>
-              <Select.Option value="2021">2021</Select.Option>
-              <Select.Option value="2022">2022</Select.Option>
-            </Select>
-          </Form.Item>
+        <div className="contect_half_width">
+          <span>Tug’ilgan yili*</span>
+          <div className="content_img_right">
+            <Form.Item>
+              <Select style={{ width: 84 }} size="large" defaultValue="3">
+                <Select.Option value="1">1</Select.Option>
+                <Select.Option value="2">2</Select.Option>
+                <Select.Option value="3">3</Select.Option>
+              </Select>
+            </Form.Item>
+            <Form.Item>
+              <Select style={{ width: 212 }} size="large" defaultValue="Dekabr">
+                <Select.Option value="Dekabr">Dekabr</Select.Option>
+                <Select.Option value="Yanvar">Yanvar</Select.Option>
+                <Select.Option value="Fevral">Fevral</Select.Option>
+              </Select>
+            </Form.Item>
+            <Form.Item>
+              <Select style={{ width: 88 }} size="large" defaultValue="2021">
+                <Select.Option value="2020">2020</Select.Option>
+                <Select.Option value="2021">2021</Select.Option>
+                <Select.Option value="2022">2022</Select.Option>
+              </Select>
+            </Form.Item>
+          </div>
         </div>
 
         <Form.Item name="level" label="Daraja*" className="contect_half_width">

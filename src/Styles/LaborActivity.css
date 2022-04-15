@@ -1,0 +1,53 @@
+.education_card_right div {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.44px;
+  color: #212121;
+}
+.labor_activity_section .educational_header {
+  flex-wrap: nowrap;
+}
+.labor_refesh {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.44px;
+  color: #004fff;
+}
+.labor_header_menu_div {
+  display: flex;
+  gap: 24px;
+}
+.labor_header_menu {
+  font-size: 14px;
+  line-height: 20px;
+  color: #212121;
+  cursor: pointer;
+  transition: 0.3s;
+  border-bottom: 3px solid white;
+}
+.labor_header_aktive {
+  border-bottom: 3px solid #ff7700;
+}
+.labor_header_menu:after {
+  display: block;
+  content: "";
+  margin-bottom: -3px;
+  border-bottom: solid 3px #ff7700;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.labor_header_menu:hover:after {
+  transform: scaleX(1);
+}
+.labor_header_menu.fromRight:after {
+  transform-origin: 100% 50%;
+}
+.labor_header_menu.fromLeft:after {
+  transform-origin: 0% 50%;
+} 

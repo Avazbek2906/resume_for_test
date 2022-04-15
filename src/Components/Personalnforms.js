@@ -2,8 +2,8 @@ import React from "react";
 import { Form, Input, Radio, Select } from "antd";
 import "../Styles/PersonalInforms.css";
 import personImg from "../Assets/Img/person.png";
-import manSvg from "../Assets/Svg/man.svg";
-import womanSvg from "../Assets/Svg/woman.svg";
+import { ReactComponent as ManSvg } from "../Assets/Svg/man.svg";
+import { ReactComponent as WomanSvg } from "../Assets/Svg/woman.svg";
 function Personalnforms() {
   const { Search } = Input;
   return (
@@ -80,32 +80,39 @@ function Personalnforms() {
             >
               <Input size="large" />
             </Form.Item>
-            <div className="contect_half_width content_img_right">
-              <Form.Item label="Tug’ilgan yili*">
-                <Select size="large" defaultValue="3">
-                  <Select.Option value="1">1</Select.Option>
-                  <Select.Option value="2">2</Select.Option>
-                  <Select.Option value="3">3</Select.Option>
-                </Select>
-              </Form.Item>
-              <Form.Item label=".">
-                <Select
-                  style={{ width: 120 }}
-                  size="large"
-                  defaultValue="Dekabr"
-                >
-                  <Select.Option value="Dekabr">Dekabr</Select.Option>
-                  <Select.Option value="Yanvar">Yanvar</Select.Option>
-                  <Select.Option value="Fevral">Fevral</Select.Option>
-                </Select>
-              </Form.Item>
-              <Form.Item label=".">
-                <Select style={{ width: 86 }} size="large" defaultValue="2021">
-                  <Select.Option value="2020">2020</Select.Option>
-                  <Select.Option value="2021">2021</Select.Option>
-                  <Select.Option value="2022">2022</Select.Option>
-                </Select>
-              </Form.Item>
+            <div className="contect_half_width">
+              <span>Tug’ilgan yili*</span>
+              <div className="content_img_right">
+                <Form.Item>
+                  <Select style={{ width: 84 }} size="large" defaultValue="3">
+                    <Select.Option value="1">1</Select.Option>
+                    <Select.Option value="2">2</Select.Option>
+                    <Select.Option value="3">3</Select.Option>
+                  </Select>
+                </Form.Item>
+                <Form.Item>
+                  <Select
+                    style={{ width: 120 }}
+                    size="large"
+                    defaultValue="Dekabr"
+                  >
+                    <Select.Option value="Dekabr">Dekabr</Select.Option>
+                    <Select.Option value="Yanvar">Yanvar</Select.Option>
+                    <Select.Option value="Fevral">Fevral</Select.Option>
+                  </Select>
+                </Form.Item>
+                <Form.Item>
+                  <Select
+                    style={{ width: 86 }}
+                    size="large"
+                    defaultValue="2021"
+                  >
+                    <Select.Option value="2020">2020</Select.Option>
+                    <Select.Option value="2021">2021</Select.Option>
+                    <Select.Option value="2022">2022</Select.Option>
+                  </Select>
+                </Form.Item>
+              </div>
             </div>
           </div>
         </div>
@@ -147,10 +154,10 @@ function Personalnforms() {
         >
           <Radio.Group>
             <Radio value="man" style={{ width: 150 }}>
-              <img src={manSvg} alt="error img" /> Erkak
+              <ManSvg className="personal_man" /> Erkak
             </Radio>
             <Radio value="woman">
-              <img src={womanSvg} alt="error img" /> Ayol
+              <WomanSvg className="personal_woman" /> Ayol
             </Radio>
           </Radio.Group>
         </Form.Item>
